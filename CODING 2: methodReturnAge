@@ -1,0 +1,42 @@
+package selfProgramming;
+import java.util.Scanner;
+public class methodReturnAge {
+	
+	public static void main(String[] args) {
+			int age = readAge();
+			System.out.println("Age is " +age);
+			if (age<=9) {
+				System.out.println("Children category");
+			} else if (age<=19) {
+				System.out.println("Adolescent category");
+			} else {
+				System.out.println("Adult category");
+			}
+			int max = readAge();
+			System.out.println("Age is " +max);
+		}
+	
+	public static int readAge() {
+		Scanner read = new Scanner(System.in);
+		int age = 0;
+		do {
+			System.out.println("Please enter your age (1-100): ");
+			age = read.nextInt();
+		} while((age < 1) || (age > 100));
+		return age;
+	}
+	
+	public static int readAge (int max)
+	{
+		Scanner read = new Scanner (System.in);
+		int age = 0;
+		do {
+			System.out.println("Exceed age value. Please enter your age(1-"+max+"):");
+			age = read .nextInt();
+			
+		}while((age<1)|| (age>max));
+		return age;
+		
+	}
+
+}
