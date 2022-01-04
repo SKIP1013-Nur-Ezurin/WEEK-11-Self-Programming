@@ -1,0 +1,26 @@
+package selfProgramming;
+
+public class methodSquare {
+
+	public static void main (String [] arguments) {
+		int value = 2;
+		printSquare(value);
+		printSquare(3);
+		printSquare(value*2);
+		printSquare(5.5);
+		printSquare2();
+	}
+		public static void printSquare(int x) {
+			System.out.println(x*x);
+			
+	}
+		public static void printSquare(double x) {
+			System.out.println(x*x);
+			
+	}
+		public static void printSquare2() {
+			String name = "Abu";
+			System.out.println("hello" +name);
+			
+	}
+}
