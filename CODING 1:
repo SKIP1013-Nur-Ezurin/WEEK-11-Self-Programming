@@ -1,0 +1,29 @@
+package selfProgramming;
+
+public class methodName {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		System.out.println("I have a message for you.");
+		showMessage();
+		showMessage2();
+		showMessage("Ali",3);
+		System.out.println("Thats all folks!");
+	}
+		public static void showMessage() 
+		{
+		System.out.println("Hello World");
+		}
+		public static void showMessage2()
+		{
+			String name = "Ali";
+			System.out.println("Hello " +name);
+		}
+		public static void showMessage(String name, int num)
+		{
+			for (int i = 1;i<= num ; i++)
+				System.out.println("Hello " +name);
+		}
+
+}
